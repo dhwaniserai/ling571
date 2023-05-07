@@ -1,0 +1,112 @@
+## Natural Language Toolkit: feat0.fcfg
+## Extension to increase coverage
+
+% start S
+# ###################
+# Grammar Productions
+# ###################
+
+# S expansion productions
+S[TENSE=?t] -> NP[AGR=?a] VP[TENSE=?t, AGR=?a] Punc
+S -> S CordCONJ S
+S -> QP 
+
+
+# NP expansion productions
+NP[AGR=?a] -> N[AGR=?a] 
+NP[AGR=?a] -> Nom[AGR=?a] Nom[AGR=?a]
+NP[AGR=?a] -> Nom[AGR=?a]
+NP[AGR=?a] -> PropN[AGR=?a]
+NP[AGR=?a] -> ProN[AGR=?a]
+NP[AGR=?a] -> RefProN[AGR=?a] 
+NP[AGR=?a] -> Det[AGR=?a] N[AGR=?a]
+NP[AGR=[NUM=pl]] -> N[AGR=[NUM=pl]] 
+
+# VP expansion productions
+VP[TENSE=?t, AGR=?a] -> IV[TENSE=?t, AGR=?a]
+VP[TENSE=?t, AGR=?a] -> IV[TENSE=?t, AGR=?a] SBP[TENSE=?t]
+VP[TENSE=?t, AGR=?a] -> TV[TENSE=?t, AGR=?a] NP[AGR=?a]
+VP[TENSE=?t, AGR=?a] -> TV[TENSE=?t, AGR=?a] PP[AGR=?a]
+VP[TENSE=?t, AGR=?a] -> TV[TENSE=?t, AGR=?a] NP[AGR=?a] PP[AGR=?a]
+VP[TENSE=?t, AGR=?a] -> TV[TENSE=?t, AGR=?a] ADJP
+VP[TENSE=?t, AGR=?a] -> DTV[TENSE=?t, AGR=?a] NP PP
+
+# SBP expansion productions
+SBP[TENSE=?t] -> SubConj NP[AGR=?a] VP[AGR=?a]
+
+# PP expansion
+PP[AGR=?a] -> P NP[AGR=?a]
+
+# QP expansion
+QP[TENSE=?t] -> QVP[TENSE=?t] NP[AGR=?a] VP[TENSE=?t, AGR=?a] QPunc
+QP[TENSE=?t] -> Q QVP[TENSE=?t] NP[AGR=?a] QVP[TENSE=?t] QPunc
+
+#QVP expansion
+QVP[TENSE=?t, AGR=?a] -> TV[TENSE=?t, AGR=?a]
+QVP[TENSE=?t, AGR=?a] -> DTV[TENSE=?t, AGR=?a] NP
+QVP[TENSE=?t, AGR=?a] -> DTV[TENSE=?t, AGR=?a] PP
+QVP[TENSE=?t, AGR=?a] -> IFV NP QVP | IFV
+
+# ###################
+# Lexical Productions
+# ###################
+
+Det[AGR=[NUM='sg']] -> 'every'
+Det[AGR=[NUM='sg', PERS=3]] -> 'this' | 'that'
+Det[AGR=[NUM='pl', PERS=3]] -> 'these' | 'those'
+Det[AGR=[NUM='pl']] -> 'all'
+Det[AGR=[PERS=3]] -> 'a' | 'the' | 'some' | 'several'
+Det[AGR=[PERS=1]] -> 'my'
+Det[AGR=[PERS=2]] -> 'your'
+
+Punc -> '.'
+QPunc -> '?'
+
+Nom[AGR=[TIME='long']] -> 'Tuesday'
+Nom[AGR=[TIME='short']] -> 'five'
+Nom[AGR=[TIME='short']] -> 'minutes'
+
+PropN[AGR=[NUM='sg']]-> 'Kim' | 'Jody'
+PropN[AGR=[NUM='sg', GND=f]] -> 'Mary'
+PropN[AGR=[NUM='sg', GND=m]] -> 'John'
+
+ProN[AGR=[NUM='sg', PERS=1]]-> 'I'
+ProN[AGR=[NUM='pl', PERS=1]]-> 'We'
+ProN[AGR=[NUM='sg', PERS=2]]-> 'you'
+ProN[AGR=[NUM='sg', PERS=3, GND='m']]-> 'he'
+ProN[AGR=[NUM='sg', PERS=3, GND='f']]-> 'she'
+
+RefProN[AGR=[NUM='sg', PERS=1]]-> 'myself'
+RefProN[AGR=[NUM='sg', PERS=2]]-> 'yourself'
+RefProN[AGR=[NUM='sg', PERS=3, GND='m']]-> 'himself'
+RefProN[AGR=[NUM='sg', PERS=3, GND='f']]-> 'herself'
+
+N[AGR=[NUM='sg']] -> 'dog' | 'car' | 'child' | 'cat' | 'book' | 'shelf' | 'summit'
+N[AGR=[NUM='pl']] -> 'dogs' | 'girls' | 'cars' | 'children' | 'cats' | 'books' | 'shelves' | 'summits'
+N[AGR=[NUM='pl', GND=f]] -> 'girls'
+N[AGR=[NUM='sg', GND=f]] -> 'girl'
+N[AGR=[NUM='pl', GND=f]] -> 'boys'
+N[AGR=[NUM='sg', GND=f]] -> 'boy'
+
+DTV -> 'put'
+TV -> 'walked'
+TV[AGR=[TIME='long']] -> 'reached'
+IFV -> 'think'
+
+IV[TENSE=pres,  AGR=[NUM=sg]] -> 'disappears' | 'walks' | 'barks' | 'thinks' 
+TV[TENSE=pres, AGR=[NUM=sg]] -> 'sees' | 'likes' | 'is' | 'does' | 'know' | 'knows'
+
+IV[TENSE=pres,  AGR=[NUM=pl]] -> 'disappear' | 'walk' | 'bark'
+TV[TENSE=pres, AGR=[NUM=pl]] -> 'see' | 'like'| 'are' | 'do'
+
+IV[TENSE=past] -> 'disappeared' | 'walked' | 'thought'
+TV[TENSE=past] -> 'saw' | 'liked' | 'was' | 'did'
+
+SubConj -> 'that'
+CordCONJ -> 'and'
+
+ADJP -> 'interesting'
+
+P -> 'on' | 'for'
+
+Q -> 'What' | 'what'

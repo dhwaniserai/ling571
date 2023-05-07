@@ -1,0 +1,55 @@
+(TOP (FRAG_PP  (IN in)  (NP_NNP Minneapolis)) (PUNC .))
+(TOP (FRAG_PP  (IN at)  (NP   (QP    (RB around)    (CD five))   (RB p.m))) (PUNC .))
+
+(TOP (FRAG_PP  (IN in)  (NP_NNP Indianapolis)) (PUNC ?))
+(FRAG_PP (IN from) (NP_NNP Indianapolis))
+(NP_PRIME (NNP Westchester) (NNP County))
+(TOP (FRAG_PP  (IN from)  (NP   (NP_PRIME    (NP_PRIME     (NP_PRIME      (NNP New)      (NNP York))     (NNP Newark))    (X_TO to))   (NP_NNP Nashville))) (PUNC .))
+(SQ_VP (VBP serve) (NP_NN dinner))
+(NP_PRIME (JJ next) (NNP Friday))
+(TOP (ADJP_JJ nonstop) (PUNC ?))
+
+(TOP (FRAG_NP  (NNP Monday)  (NN afternoon)) (PUNC ?))
+(FRAG_PP (IN from) (NP_NNP Baltimore))
+(SQ_VP (VBP are) (NP_NN dinner))
+(FRAG_PP (IN from) (NP_NNP Tacoma))
+(FRAG_PP (IN in) (NP_NNP Toronto))
+(QP_PRIME (CD four) (CD thirty))
+(NP_PRIME (NNP Saint) (NNP Louis))
+(FRAG_PP (IN from) (NP_NNP Phoenix))
+(FRAG_PP (IN from) (NP_NNP Nashville))
+(FRAG_PP (IN from) (NP_NNP Charlotte))
+(NP_PRIME (NP_PRIME  (NP_PRIME   (NP_PRIME    (NP_PRIME     (NNP New)     (NNP York))    (NNP City))   (X_TO to))  (NNP Las)) (NNP Vegas))
+(NP_PRIME (CD four) (RB p.m))
+(NP_PRIME (NP_PRIME  (NNP U)  (NNP S)) (NNP Air))
+(FRAG_PP (IN from) (NP_NNP Houston))
+(NP_PRIME (DT each) (JJ other))
+
+(TOP (FRAG_NP  (CD hundred)  (NNS hours)) (PUNC .))
+(TOP (FRAG_NP  (NNP Friday)  (NN night)) (PUNC .))
+(FRAG_PP (IN From) (NP_NNP Atlanta))
+(NP_PRIME (NP_PRIME  (NP_PRIME   (NP_PRIME    (NNP Las)    (NNP Vegas))   (X_TO to))  (NNP San)) (NNP Diego))
+(NP_PRIME (NNP American) (NNP Airlines))
+
+(PP_PRIME (NP  (NP_PRIME   (NP_PRIME    (NNP Las)    (NNP Vegas))   (X_TO to))  (NP_NNP Phoenix)) (IN on))
+(FRAG_NP_PRIME (FRAG_NP_PRIME  (NN fare)  (NN code)) (SYM Q))
+
+(NP_PRIME (CD five) (RB p.m))
+
+
+(FRAG_PP (IN from) (NP_NNP Miami))
+(NP_PRIME (NP_PRIME  (NNP Wednesday)  (CC or)) (NNP Thursday))
+(FRAG_NP_PRIME (JJ first) (NN class))
+
+(TOP (FRAG_NP  (FRAG_NP_PRIME   (NN business)   (NN class))  (NP_NNS fares)) (PUNC .))
+
+(NP_PRIME (NNP Las) (NNP Vegas))
+
+(FRAG_PP (IN in) (NP_NNP Denver))
+
+(NP_PRIME (NP_PRIME  (NP_PRIME   (NP_PRIME    (NP_PRIME     (NP_PRIME      (NNP Guardia)      (CC or))     (NNP J))    (NNP F))   (NNP K))  (X_TO to)) (NNP Cleveland))
+(TOP (FRAG_NP  (CD fifty)  (NNS dollars)) (PUNC .))
+(FRAG_NP_PRIME (JJ first) (NN class))
+(X_S_VP_PRIME (VB Show) (NP_PRP me))
+(NP_PRIME (NNP Southwest) (NNP Airlines))
+(NP_PRIME (NNP Los) (NNP Angeles))

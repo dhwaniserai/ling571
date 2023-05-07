@@ -1,0 +1,24 @@
+(S[TENSE='pres'] (NP[AGR=[NUM='pl', PERS=3]] (Det[AGR=[PERS=3]] the) (N[AGR=[NUM='pl']] dogs)) (VP[AGR=[NUM='pl'], TENSE='pres'] (IV[AGR=[NUM='pl'], TENSE='pres'] bark)) (Punc[] .))
+(S[TENSE='pres'] (NP[AGR=[NUM='sg', PERS=3]] (Det[AGR=[PERS=3]] the) (N[AGR=[NUM='sg']] dog)) (VP[AGR=[NUM='sg'], TENSE='pres'] (IV[AGR=[NUM='sg'], TENSE='pres'] barks)) (Punc[] .))
+
+
+
+(S[TENSE='pres'] (NP[AGR=[NUM='pl']] (N[AGR=[NUM='pl']] dogs)) (VP[AGR=[NUM='pl'], TENSE='pres'] (IV[AGR=[NUM='pl'], TENSE='pres'] bark)) (Punc[] .))
+
+(S[TENSE='past'] (NP[AGR=[GND='m', NUM='sg']] (PropN[AGR=[GND='m', NUM='sg']] John)) (VP[AGR=?a, TENSE='past'] (IV[TENSE='past'] thought) (SBP[TENSE=?t] (SubConj[] that) (NP[AGR=[NUM='sg', PERS=3]] (Det[AGR=[PERS=3]] the) (N[AGR=[NUM='sg']] book)) (VP[AGR=?a, TENSE='past'] (TV[TENSE='past'] was) (ADJP[] interesting)))) (Punc[] .))
+
+
+(S[TENSE=?t] (NP[AGR=[GND='f', NUM='sg']] (PropN[AGR=[GND='f', NUM='sg']] Mary)) (VP[AGR=?a, TENSE=?t] (DTV[] put) (NP[AGR=[NUM='sg', PERS=3]] (Det[AGR=[PERS=3]] the) (N[AGR=[NUM='sg']] book)) (PP[AGR=[NUM='sg', PERS=3]] (P[] on) (NP[AGR=[NUM='sg', PERS=3]] (Det[AGR=[PERS=3]] the) (N[AGR=[NUM='sg']] shelf)))) (Punc[] .))
+(S[] (QP[TENSE='past'] (QVP[AGR=?a, TENSE='past'] (TV[TENSE='past'] did)) (NP[AGR=[GND='f', NUM='sg']] (PropN[AGR=[GND='f', NUM='sg']] Mary)) (VP[AGR=?a, TENSE=?t] (DTV[] put) (NP[AGR=[NUM='sg', PERS=3]] (Det[AGR=[PERS=3]] the) (N[AGR=[NUM='sg']] book)) (PP[AGR=[NUM='sg', PERS=3]] (P[] on) (NP[AGR=[NUM='sg', PERS=3]] (Det[AGR=[PERS=3]] the) (N[AGR=[NUM='sg']] shelf)))) (QPunc[] ?)))
+
+(S[] (QP[TENSE='past'] (Q[] what) (QVP[AGR=?a, TENSE='past'] (TV[TENSE='past'] did)) (NP[AGR=[GND='f', NUM='sg']] (PropN[AGR=[GND='f', NUM='sg']] Mary)) (QVP[AGR=?a, TENSE=?t] (DTV[] put) (PP[AGR=[NUM='sg', PERS=3]] (P[] on) (NP[AGR=[NUM='sg', PERS=3]] (Det[AGR=[PERS=3]] the) (N[AGR=[NUM='sg']] shelf)))) (QPunc[] ?)))
+
+(S[] (QP[TENSE='pres'] (Q[] what) (QVP[AGR=[NUM='sg'], TENSE='pres'] (TV[AGR=[NUM='sg'], TENSE='pres'] does)) (NP[AGR=[GND='m', NUM='sg']] (PropN[AGR=[GND='m', NUM='sg']] John)) (QVP[AGR=[NUM='sg'], TENSE='pres'] (TV[AGR=[NUM='sg'], TENSE='pres'] know)) (QPunc[] ?)))
+(S[] (QP[TENSE='pres'] (Q[] what) (QVP[AGR=[NUM='sg'], TENSE='pres'] (TV[AGR=[NUM='sg'], TENSE='pres'] does)) (NP[AGR=[GND='f', NUM='sg']] (PropN[AGR=[GND='f', NUM='sg']] Mary)) (QVP[AGR=?a, TENSE=?t] (IFV[] think) (NP[AGR=[GND='m', NUM='sg']] (PropN[AGR=[GND='m', NUM='sg']] John)) (QVP[AGR=[NUM='sg'], TENSE='pres'] (TV[AGR=[NUM='sg'], TENSE='pres'] knows))) (QPunc[] ?)))
+(S[TENSE='past'] (NP[AGR=[GND='f', NUM='sg']] (PropN[AGR=[GND='f', NUM='sg']] Mary)) (VP[AGR=[GND='f', NUM='sg', PERS=3], TENSE='past'] (TV[TENSE='past'] saw) (NP[AGR=[GND='f', NUM='sg', PERS=3]] (RefProN[AGR=[GND='f', NUM='sg', PERS=3]] herself))) (Punc[] .))
+
+(S[TENSE='past'] (NP[AGR=[GND='m', NUM='sg']] (PropN[AGR=[GND='m', NUM='sg']] John)) (VP[AGR=[GND='m', NUM='sg', PERS=3], TENSE='past'] (TV[TENSE='past'] saw) (NP[AGR=[GND='m', NUM='sg', PERS=3]] (RefProN[AGR=[GND='m', NUM='sg', PERS=3]] himself))) (Punc[] .))
+(S[TENSE=?t] (NP[AGR=[GND='m', NUM='sg']] (PropN[AGR=[GND='m', NUM='sg']] John)) (VP[AGR=[NUM='sg', PERS=3, TIME='long'], TENSE=?t] (TV[AGR=[TIME='long']] reached) (NP[AGR=[NUM='sg', PERS=3]] (Det[AGR=[PERS=3]] the) (N[AGR=[NUM='sg']] summit)) (PP[AGR=[TIME='long']] (P[] on) (NP[AGR=[TIME='long']] (Nom[AGR=[TIME='long']] Tuesday)))) (Punc[] .))
+
+(S[TENSE=?t] (NP[AGR=[GND='m', NUM='sg']] (PropN[AGR=[GND='m', NUM='sg']] John)) (VP[AGR=[TIME='long'], TENSE=?t] (TV[] walked) (PP[AGR=[TIME='long']] (P[] on) (NP[AGR=[TIME='long']] (Nom[AGR=[TIME='long']] Tuesday)))) (Punc[] .))
+(S[TENSE=?t] (NP[AGR=[GND='f', NUM='sg']] (PropN[AGR=[GND='f', NUM='sg']] Mary)) (VP[AGR=[TIME='short'], TENSE=?t] (TV[] walked) (PP[AGR=[TIME='short']] (P[] for) (NP[AGR=[TIME='short']] (Nom[AGR=[TIME='short']] five) (Nom[AGR=[TIME='short']] minutes)))) (Punc[] .))

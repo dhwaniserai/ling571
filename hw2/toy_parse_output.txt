@@ -1,0 +1,22 @@
+the cat chased the dog
+(S (NP (Det the) (N cat)) (V (V chased) (NP (Det the) (N dog))))
+Number of parses: 1.0
+
+a dog chased a cat
+(S (NP (Det a) (N dog)) (V (V chased) (NP (Det a) (N cat))))
+Number of parses: 1.0
+
+the dog chased a cat on the mat
+(S
+  (NP (Det the) (N dog))
+  (V
+    (V (V chased) (NP (Det a) (N cat)))
+    (PP (P on) (NP (Det the) (N mat)))))
+(S
+  (NP (Det the) (N dog))
+  (V
+    (V chased)
+    (NP (NP (Det a) (N cat)) (PP (P on) (NP (Det the) (N mat))))))
+Number of parses: 2.0
+
+Average number of parses per sentence: 1.3333333333333333

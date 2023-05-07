@@ -1,0 +1,44 @@
+% start S
+
+S[SEM = <?subj(?vp)>] -> NP[SEM=?subj] VP[SEM=?vp]
+
+
+VP[SEM=?v] -> IV[SEM=?v]
+VP[SEM=<?neg(?v)>] -> AUX[SEM=?a] NVerb[SEM=?neg] IV[SEM=?v]
+VP[SEM=<?c(?v2)(?v1)>] -> VP[SEM=?v1] Conj[SEM=?c] VP[SEM=?v2]
+VP[SEM=<?subv(?n)>] -> TV[SEM=?subv] NP[SEM=?n]
+NP[SEM=<?det(?n)>] -> Det[SEM=?det] N[SEM=?n]
+NP[SEM=<?det(?n)>] -> NDet[SEM=?det] N[SEM=?n]
+ 
+NP[SEM=<?subj>] -> N[SEM=?subj]
+N[SEM=<?c(?subj1)(?subj2)>] -> N[SEM=?subj1] Conj[SEM=?c] N[SEM=?subj2]
+
+NDet[SEM=<\Q P -exists x.(Q(x) & P(x))>] -> 'no'
+Det[SEM=<\Q P.exists x.(Q(x) & P(x))>] -> 'a' | 'an'
+Det[SEM=<\Q P.all x.(Q(x) -> P(x))>] -> 'every' | 'all'
+N[SEM=<\x.dog(x)>] -> 'dog'
+N[SEM=<\P.P(John)>] -> 'John'
+N[SEM=<\Q.Q(Mary)>] -> 'Mary'
+N[SEM=<\P.P(Jack)>] -> 'Jack'
+
+N[SEM=<\x.person(x)>] -> 'person'
+
+N[SEM=<\P -exists x.(person(x) & P(x))>] -> 'nobody'
+N[SEM=<\x.student(x)>] -> 'student' | 'students'
+N[SEM=<\x.sandwich(x)>] -> 'sandwich'
+N[SEM=<\x.bagel(x)>] -> 'bagel'
+N[SEM=<\x.essay(x)>] -> 'essay'
+N[SEM=<\x.soda(x)>] -> 'soda'
+IV[SEM=<\x.exists e.(barking(e) & barker(e,x))>] -> 'barks'
+IV[SEM=<\x.exists e.(eating(e) & eater(e,x))>] -> 'eats' | 'eat'
+IV[SEM=<\x.exists e.(drinking(e) & drinker(e,x))>] -> 'drinks' | 'drink'
+IV[SEM=<\x.exists e.(writing(e) & writer(e,x))>] -> 'writes' | 'write'
+
+TV[SEM=<\X x.X(\y.exists e.(eating(e) & eater(e,x) & eatthing(e,y)))>] -> 'eats' | 'eat'
+TV[SEM=<\X x.X(\y.exists e.(drinking(e) & drinker(e,x) & drinkthing(e,y)))>] -> 'drinks' | 'drink'
+TV[SEM=<\X x.X(\y.exists e.(writing(e) & writer(e,x) & writething(e,y)))>] -> 'writes' | 'write'
+
+Conj[SEM=<\P Q x.(P(x) or Q(x))>] -> 'or'
+
+AUX[SEM=''] -> 'does'
+NVerb[SEM=<\P x.(-P(x))>] -> 'not'

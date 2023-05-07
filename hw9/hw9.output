@@ -1,0 +1,11 @@
+Expansion      5009
+Comparison     4383
+Temporal       2752
+Contingency    2580
+Name: Sense, dtype: int64
+test
+Expansion      213
+Comparison     192
+Temporal       169
+Contingency    107
+Name: Sense, dtype: int64
